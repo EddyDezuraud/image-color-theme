@@ -1,0 +1,23 @@
+{
+  "name": "imagecolorapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddyDezuraud/imageColorApi.git"
+  },
+  "author": "Eddy Dezuraud <eddy@gedivote.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EddyDezuraud/imageColorApi/issues"
+  },
+  "homepage": "https://github.com/EddyDezuraud/imageColorApi#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "get-image-colors": "^4.0.1"
+  }
+}
