@@ -20,7 +20,7 @@ app.get('/api', async (req, res) => {
         const url = req.query.url;
         if (url) {
             response = await getColors(url);
-            const json = await response.json();
+            const json = response;
 
             const child = { rgb: '', hex: '' };
 
@@ -32,9 +32,9 @@ app.get('/api', async (req, res) => {
 
             for (var i = 0; i < json.length; i++) {
                 if (i < 3) {
-                    const key = Object.keys(ret)[i];
+                    const key = Object.keys(colors)[i];
                     const rgbColor = JSON.stringify(json[i]._rgb);
-                    colors[key].rbg = rgbColor.replace('[', '').replace(']', '');
+                    colors[key].rgb = rgbColor.replace('[', '').replace(']', '');
 
                     const hexColor = rgbToHex(json[i]._rgb[0], json[i]._rgb[1], json[i]._rgb[2]);
                     colors[key].hex = hexColor;
