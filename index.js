@@ -5,7 +5,7 @@ const port = 5566
 const getColors = require('get-image-colors')
 
 
-app.get('/', async (req, res) => {
+app.get('/api', async (req, res) => {
 
     try {
         const url = req.query.url;
