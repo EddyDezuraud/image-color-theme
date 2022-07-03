@@ -19,7 +19,7 @@ app.get('/api', async (req, res) => {
     try {
         const url = req.query.url;
         if (url) {
-            response = await getColors(url);
+            response = await getColors(url, {count: 20});
             const json = response;
 
             const child = { rgb: '', hex: '' };
