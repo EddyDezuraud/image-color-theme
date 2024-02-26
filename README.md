@@ -1,10 +1,10 @@
-# ImageColorAPI
+# Image Color Theme
 
-ImageColorAPI is a simple API that extracts primary, secondary, and tertiary colors from images. It provides a straightforward way to integrate color extraction functionality into your applications.
+Image Color Theme is a simple API that extracts primary, secondary, and tertiary colors from images. It provides a straightforward way to integrate color extraction functionality into your applications.
 
 ## How to Use
 
-To use ImageColorAPI, send a GET request to the following endpoint:
+To use Image Color Theme, send a GET request to the following endpoint:
 
 
 Replace `yourImageUrl` with the URL of the image from which you want to extract colors.
@@ -14,7 +14,7 @@ Replace `yourImageUrl` with the URL of the image from which you want to extract 
 ```javascript
 const imageUrl = 'https://example.com/image.jpg';
 
-fetch(`https://image-color-api.vercel.app/api?url=${imageUrl}`)
+fetch(`https://image-color-theme.vercel.app/api?url=${imageUrl}`)
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
@@ -51,7 +51,7 @@ The API returns a JSON object containing primary, secondary, and tertiary colors
 
 ### Running Locally
 
-1. Clone the repository: `git clone https://github.com/your-username/image-color-api.git`
+1. Clone the repository: `git clone https://github.com/your-username/image-color-theme.git`
 2. Install dependencies: `npm install`
 3. Start the server: `npm start`
 
