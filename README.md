@@ -21,7 +21,7 @@ fetch(`https://image-color-api.vercel.app/api?url=${imageUrl}`)
 ```
 
 
-## How to Use
+## Response Format
 The API returns a JSON object containing primary, secondary, and tertiary colors along with their RGB and hexadecimal representations.
 
 ### Example Response:
